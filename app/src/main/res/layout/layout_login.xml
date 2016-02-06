@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/tools"
+    android:id="@+id/layout_login"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C51162"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/login_text"
+        android:text="EATEN"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:capitalize="none"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="48dp"
+        android:layout_width="201dp"
+        android:layout_height="72dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/username_login"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:drawableLeft="@drawable/username"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            app:met_floatingLabelTextSize="10sp"
+            app:met_baseColor="#ffffff"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true"
+            android:layout_weight="0.39" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password_login"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:textSize="20sp"
+            app:met_floatingLabelTextSize="10sp"
+            app:met_baseColor="#ffffff"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true"
+            android:layout_weight="0.13" />
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/loginbtn"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:minHeight="40dp"
+        android:minWidth="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="-5dp"
+        android:text="Join"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        fbutton:cornerRadius="15dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/signupbtn"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:minHeight="40dp"
+        android:minWidth="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="-5dp"
+        android:text="Sign"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        fbutton:cornerRadius="15dp"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

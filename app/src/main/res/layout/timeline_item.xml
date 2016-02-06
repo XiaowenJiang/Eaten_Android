@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_row_hover_start_color" >
+
+    <View
+        android:id="@+id/top_line"
+        android:layout_width="2dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_line"
+        android:layout_marginLeft="100dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/timeline_grey"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_line"
+        android:layout_marginLeft="10dp"
+        />
+
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="2dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/img_icon"
+        android:layout_marginLeft="100dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_line"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/img_icon"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp" >
+
+
+        <!-- Thumbnail Image -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/history_thumbnail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp" />
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/history_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/history_property"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/account_front"
+                android:drawablePadding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="creator"
+                />
+            <TextView
+                android:id="@+id/history_restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/restaurant_front"
+                android:drawablePadding="10dp"
+                android:layout_below="@+id/history_property"
+                android:textColor="@color/white"
+                android:text="chinese"/>
+            <TextView
+                android:id="@+id/history_address"
+                android:drawableLeft="@drawable/address_front"
+                android:drawablePadding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/history_restaurant"
+                />
+            <TextView
+                android:id="@+id/history_people"
+                android:drawableLeft="@drawable/join_people_front"
+                android:drawablePadding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/history_address"
+                android:textColor="@color/list_row_hover_start_color"
+                android:text="me"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

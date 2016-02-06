@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C51162">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/username_signup"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="10dp"
+                android:textSize="15sp"
+                app:met_floatingLabelTextSize="12sp"
+                app:met_baseColor="#ffffff"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/name_signup"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="10dp"
+                android:textSize="15sp"
+                app:met_floatingLabelTextSize="12sp"
+                app:met_baseColor="#ffffff"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+            <CheckBox
+                android:id="@+id/gender_female"
+                android:text="Female"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:onClick="GenderCheckboxClicked"/>
+
+            <CheckBox
+                android:id="@+id/gender_male"
+                android:text="Male"
+                android:textSize="15dp"
+                android:textColor="@color/gray"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:onClick="GenderCheckboxClicked"/>
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email_signup"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
+                android:textSize="15sp"
+                app:met_floatingLabelTextSize="12sp"
+                app:met_baseColor="#ffffff"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password_signup"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:textSize="15sp"
+                app:met_floatingLabelTextSize="12sp"
+                app:met_baseColor="#ffffff"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/confirmpw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm"
+                android:drawableLeft="@drawable/con"
+                android:drawablePadding="10dp"
+                android:textSize="15sp"
+                app:met_floatingLabelTextSize="12sp"
+                app:met_baseColor="#ffffff"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/submit_signup"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:minHeight="40dp"
+            android:minWidth="80dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="-5dp"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            fbutton:cornerRadius="15dp"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/cancel_signup"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:minHeight="40dp"
+            android:minWidth="80dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="-5dp"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            fbutton:cornerRadius="15dp"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
